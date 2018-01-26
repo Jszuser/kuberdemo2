@@ -13,6 +13,6 @@ func hello(w http.ResponseWriter, r *http.Request) {
 func main() {
 	http.HandleFunc("/", hello)
 	port := ":8020"
-	fmt.Printf("Starting to demo service on port %s\n", port);
+	fmt.Printf("Starting a demo service on port %s\n", port);
 	http.ListenAndServe(port, nil)
 }
